@@ -1,0 +1,593 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+  <title>Gmail Inbox Mockup Example</title>
+</head>
+
+<body>
+
+  <div id="widgetcontainer" class="widget-container example">
+    <div class="widget-wrapper">
+      <div id="main-widget-plus" class="main-widget">
+        <i id="main-icon" class="fas"></i>
+      </div>
+      <div id="widget-4" class="widget olive"><i class="fas fa-share-alt-square"></i></div>
+      <div id="widget-label1" class="widget-label">Invite to Inbox</div>
+      <div id="widget-3" class="widget purple">J</div>
+      <div id="widget-label2" class="widget-label">Jason G.</div>
+      <div id="widget-2" class="widget teal">Q</div>
+      <div id="widget-label3" class="widget-label">Queenie </div>
+      <div id="widget-1" class="widget green">A</div>
+      <div id="widget-label4" class="widget-label">Ashleigh C.</div>
+      <div id="profile-widget" class="widget">
+        <img class="widget-img"
+          src="https://kbrowning2.files.wordpress.com/2019/12/screen-shot-2019-12-22-at-11.59.55-am.png" />
+      </div>
+      <div id="widget-label5" class="widget-label">Kirby B. (You)</div>
+    </div>
+
+  <div class="profile-expanded-wrapper hide" id="expanded-menu-overlay">
+    <div class="expanded-ticker"></div>
+    <div id="expanded-profile" class="profile-expanded-container">
+      <div class="profile-expanded-top">
+
+        <div id="main-profile" class="alt-email">
+          <div class="img-change-wrapper">
+
+            <div class="email-img-container">
+              <img class="email-img"
+                src="https://upload.wikimedia.org/wikipedia/commons/5/56/Carolina_Chickadee1_by_Dan_Pancamo.jpg">
+            </div>
+            <div class="change-photo">Change Image</div>
+          </div>
+
+          <div class="alt-email-text-container" id="profile-main">
+            <p class="alt-email-name strong">Kirby Browning</p>
+            <span class="alt-email-name">kirby12345@email.com</span>
+            <div class="account-privacy-container">
+              <span class="account-privacy-links">Account</span> - <span class="account-privacy-links">Privacy</span>
+            </div>
+            <div class="view-profile-button">View Profile</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end profile top-->
+      <div class="alt-email">
+        <div class="alt-email-img-container">
+          <img id="alt-img1" class="alt-email-img" src="https://i.ytimg.com/vi/h-0-S6ppQ5c/maxresdefault.jpg">
+        </div>
+        <div class="alt-email-text-container">
+          <p class="alt-email-name">Kirby B.</p>
+          <p class="alt-email-label">kirbykirby@email.com</p>
+        </div>
+      </div>
+
+      <div class="alt-email">
+        <div class="alt-email-img-container">
+          <img id="alt-img2" class="alt-email-img"
+            src="https://media.wired.com/photos/59822d6fbc944559d607e43a/master/pass/PeacockHP-691483428.jpg">
+        </div>
+        <div class="alt-email-text-container">
+          <p class="alt-email-name">Kirby B.</p>
+          <p class="alt-email-label">k_browning@email.com</p>
+        </div>
+      </div>
+
+      <div class="add-signout-container">
+        <div class="add-account-button"><span class="viewprofile">Add Account</span></div>
+        <div class="signout-button"><span class="viewprofile">Sign Out</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Main Header start -->
+
+  <div class="main-header-container" id="main-header">
+    <div class="back-arrow-container hide" id="back-arrow">
+      <i class="fas fa-arrow-left"></i>
+      <span id="header-text-back">Back</span>
+    </div>
+
+    <div class="hamburger-nav-container" id="hamburger-nav">
+
+      <i id="ham-nav-icon" class="fas fa-bars"></i>
+      <p class="header-text" id="header-text-inbox">Inbox</p>
+    </div>
+
+    <div class="search-bar-container" id="search-bar">
+
+      <div class="search-bar-wrapper">
+        <div class="search-icon-container">
+          <i id="search-icon" class="fas fa-search"></i>
+        </div>
+        <input class="search-default" id="search-bar-input" type="text" placeholder="Search"/>
+      </div>
+    </div>
+
+    <div class="toggle" id="toggle-container">
+      <div id="slider" class="slider">
+        <div class="inner-toggle" id="inner-toggle"><i class="fas fa-thumbtack" id="thumbtack"></i></div>
+      </div>
+    </div>
+
+    <div class="icon-profile-wrapper" id="icon-wrapper">
+
+      <div class="header-icon-container">
+        <i class="fas fa-comment"></i>
+        <i class="fas fa-th"></i>
+        <i class="fas fa-bell"></i>
+      </div>
+    </div>
+    <div class="profile-container" id="profile-container">
+      <img class="profile-picture"
+        src="https://kbrowning2.files.wordpress.com/2019/12/screen-shot-2019-12-22-at-11.59.55-am.png" />
+    </div>
+  </div>
+
+  <div id="search-results" class="search-results hide">
+  </div>
+
+  <!-- end account container -->
+  <div id="message-body" class="body-content-container">
+
+    <div id="hamburger-nav-full" class="ham-nav-menu-container">
+      <div class="menu-item">
+        <i class="fas fa-thumbtack blue"></i>
+        <p class="ham-nav-menu-text">Inbox</p>
+
+      </div>
+      <div class="menu-item">
+        <i class="far fa-paper-plane teal2"></i>
+        <p class="ham-nav-menu-text">Sent</p>
+
+      </div>
+      <div class="menu-item">
+        <i class="far fa-clock lime"></i>
+        <p class="ham-nav-menu-text">Snoozed</p>
+
+      </div>
+      <div class="menu-item">
+        <i class="fas fa-check green2"></i>
+        <p class="ham-nav-menu-text">Done</p>
+
+      </div>
+      <div class="menu-item">
+        <i class="fas fa-trash grey"></i>
+        <p class="ham-nav-menu-text">Trash</p>
+
+      </div>
+      <div id="settings-container" class="menu-item">
+        <i class="fas fa-cog grey"></i>
+        <p id="settings" class="ham-nav-menu-text">Settings</p>
+        <i id="settings-down" class="fas fa-sort-down"></i>
+
+      </div>
+
+      <div id="hidden-menu-items" class="hidden-menu-container">
+
+        <div id="hidden-menu-item-1" class="menu-item">
+          <i class="fas fa-hand-pointer purple2"></i>
+          <p class="ham-nav-menu-text">Reminders</p>
+
+        </div>
+
+        <div id="hidden-menu-item-2" class="menu-item">
+          <i class="fas fa-exclamation-triangle red"></i>
+          <p class="ham-nav-menu-text">Spam</p>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="body-content-wrapper">
+      <div class="inbox-label-container">
+        <p class="inbox-label">Today</p>
+        <i class="fas fa-check"></i>
+      </div>
+
+      <div id="msg-container1" class="message-container">
+        <div id="message1" class="message">
+          <div id="preview-avatar" class="avatar-wrapper">
+            <div class="name-circle-container show-flex">
+              <div class="circle-avatar green"><span>A</span></div>
+              <p class="sender-name">Ashleigh</p>
+            </div>
+          </div>
+
+          <div id="preview-message" class="preview-container">
+            <p class="preview-header">JS Stuff <span id="preview-message-text" class="preview-text">- get that inbox
+                mockup done yet? Let me know if you need any resources because you kn...</span>
+          </div>
+
+          <div class="icon-hover-wrapper" id="message-icon-container">
+
+            <div class="icon-hover-container" id="inbox-icons">
+              <i class="fas fa-thumbtack"></i>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-check"></i>
+              <i class="fas fa-ellipsis-v"></i>
+
+            </div>
+          </div>
+        </div>
+
+        <div id="expanded-msg" class="expanded-message-wrapper hide">
+          <div class="expanded-message">
+            <div class="name-circle-container show-flex exp">
+              <div class="circle-avatar green">A</div>
+              <span class="sender-name strong">Ashleigh</span> <span>&nbsp;to me</span>
+            </div>
+
+            <div class="expanded-message-content">
+              <p class="msg-content">get that inbox mockup done yet? Let me know if you need any resources because you
+                know I have plenty! I can also help you through some of the parts you're stuck on if you want... </p>
+            </div>
+
+          </div>
+
+          <div class="reply-container">
+            <div class="name-circle-container show-flex exp">
+              <div class="circle-avatar burgandy">K</div>
+              <span class="sender-name strong red">Draft</span> <span class="strong grey">&nbsp;to Ashleigh <i
+                  class="fas fa-chevron-down"></i> </span>
+            </div>
+
+            <div class="reply-input-container">
+              <textarea class="reply-input" type="text"></textarea>
+
+            </div>
+
+          </div>
+          <div class="send-container">
+            <div class="button-container">
+              <div id="send" class="button">Send</div>
+              <i class="fas fa-paperclip"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="msg-container2" class="message-container">
+        <div id="message2" class="message">
+          <div id="preview-avatar2" class="avatar-wrapper">
+            <div class="name-circle-container show-flex">
+              <div class="circle-avatar yellow"><span>S</span></div>
+              <p class="sender-name">Stefanie</p>
+            </div>
+          </div>
+
+          <div id="preview-message" class="preview-container">
+            <p class="preview-header">RE: Lantern Festival <span id="preview-message-text2" class="preview-text">- Yes,
+                just send me the money for the tickets on Venmo and we can figure out the...</span>
+          </div>
+
+          <div class="icon-hover-wrapper" id="message-icon-container">
+
+            <div class="icon-hover-container" id="inbox-icons">
+              <i class="fas fa-thumbtack"></i>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-check"></i>
+              <i class="fas fa-ellipsis-v"></i>
+
+            </div>
+          </div>
+        </div>
+
+        <div id="expanded-msg2" class="expanded-message-wrapper hide">
+          <div class="expanded-message">
+            <div class="name-circle-container show-flex exp">
+              <div class="circle-avatar yellow">S</div>
+              <span class="sender-name strong">Stefanie</span> <span>&nbsp;to me</span>
+            </div>
+
+            <div class="expanded-message-content">
+              <p class="msg-content">Yes, just send me the money for the tickets on Venmo, and we can figure out the
+                rest later. Anyways, can't wait to see you there! Also, thanks again for feeding the babies while we
+                were gone <3< /p>
+            </div>
+
+          </div>
+
+          <div class="reply-container">
+            <div class="name-circle-container show-flex exp">
+              <div class="circle-avatar burgandy">K</div>
+              <span class="sender-name strong red">Draft</span> <span class="strong grey">&nbsp;to Stefanie <i
+                  class="fas fa-chevron-down"></i> </span>
+            </div>
+
+            <div class="reply-input-container">
+              <textarea class="reply-input" type="text"></textarea>
+
+            </div>
+
+          </div>
+          <div class="send-container">
+            <div class="button-container">
+              <div class="button">Send</div>
+              <i class="fas fa-paperclip"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="msg-container3" class="message-container">
+        <div id="message3" class="message">
+          <div id="preview-avatar3" class="avatar-wrapper">
+            <div class="name-circle-container show-flex">
+              <div class="circle-avatar teal"><span>Q</span></div>
+              <p class="sender-name">Queenie</p>
+            </div>
+          </div>
+
+          <div id="preview-message" class="preview-container">
+            <p class="preview-header">Birthday Dinner Reservation <span id="preview-message-text3"
+                class="preview-text">- Here's the place I want to go for my birthday, it's not far from my place and
+                we...</span>
+          </div>
+
+          <div class="icon-hover-wrapper" id="message-icon-container">
+
+            <div class="icon-hover-container" id="inbox-icons">
+              <i class="fas fa-thumbtack"></i>
+              <i class="far fa-clock"></i>
+              <i class="fas fa-check"></i>
+              <i class="fas fa-ellipsis-v"></i>
+
+            </div>
+          </div>
+        </div>
+
+        <div id="expanded-msg3" class="expanded-message-wrapper hide">
+          <div class="expanded-message">
+            <div class="name-circle-container show-flex exp">
+              <div class="circle-avatar teal">Q</div>
+              <span class="sender-name strong">Queenie</span> <span>&nbsp;to me</span>
+            </div>
+
+            <div class="expanded-message-content">
+              <p class="msg-content">Here's the place I want to go for my birthday, it's not far from my place and we
+                can Uber there and back if we don't feel like taking the train. Let me know :)</p>
+              <a class="msg-link" href="#">https://www.vandalnewyork.com/</a>
+            </div>
+
+          </div>
+
+          <div class="reply-container">
+            <div class="name-circle-container show-flex exp">
+              <div class="circle-avatar burgandy">K</div>
+              <span class="sender-name strong red">Draft</span> <span class="strong grey">&nbsp;to Queenie <i
+                  class="fas fa-chevron-down"></i> </span>
+            </div>
+
+            <div class="reply-input-container">
+              <textarea class="reply-input" type="text"></textarea>
+
+            </div>
+
+          </div>
+          <div class="send-container">
+            <div class="button-container">
+              <div class="button">Send</div>
+              <i class="fas fa-paperclip"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inbox-label-container">
+      <p class="inbox-label">Yesterday</p>
+      <i class="fas fa-check"></i>
+    </div>
+
+    <div id="msg-container4" class="message-container">
+      <div id="message4" class="message">
+        <div id="preview-avatar4" class="avatar-wrapper">
+          <div class="name-circle-container show-flex">
+            <div class="circle-avatar purple"><span>J</span></div>
+            <p class="sender-name">Jason</p>
+          </div>
+        </div>
+
+        <div id="preview-message" class="preview-container">
+          <p class="preview-header">My paper <span id="preview-message-text4" class="preview-text">- Hi Kirby, Can you
+              read my paper for me please it's due tomorrow at 3 pm thanks...</span>
+        </div>
+
+        <div class="icon-hover-wrapper" id="message-icon-container">
+
+          <div class="icon-hover-container" id="inbox-icons">
+            <i class="fas fa-thumbtack"></i>
+            <i class="far fa-clock"></i>
+            <i class="fas fa-check"></i>
+            <i class="fas fa-ellipsis-v"></i>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="expanded-msg4" class="expanded-message-wrapper hide">
+        <div class="expanded-message">
+          <div class="name-circle-container show-flex exp">
+            <div class="circle-avatar purple">J</div>
+            <span class="sender-name strong">Jason</span> <span>&nbsp;to me</span>
+          </div>
+
+          <div class="expanded-message-content">
+            <p class="msg-content">Hi Kirby, </p>
+            <p class="msg-content">Can you read my paper for me please it's due tomorrow at 3 pm thanks so much i really
+              appreciate it! </p>
+            <div class="attachment-container">
+              <div class="attachment-icon-container">
+                <i class="fas fa-file-word"></i>
+                <i class="fas fa-paperclip"></i>
+              </div>
+              <div class="attachment-text-container">
+                <span class="attachment-name">FinalEssay.doc</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="jason" class="reply-container">
+            <div class="name-circle-container show-flex exp">
+              <div class="circle-avatar burgandy">K</div>
+              <span class="sender-name strong red">Draft</span> <span class="strong grey">&nbsp;to Jason <i
+                  class="fas fa-chevron-down"></i> </span>
+            </div>
+
+            <div class="reply-input-container">
+              <textarea class="reply-input" type="text"></textarea>
+            </div>
+
+            <div class="send-container">
+              <div class="button-container">
+                <div class="button">Send</div>
+                <i class="fas fa-paperclip"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="ashleigh-newmsg" class="new-message-popup-container">
+    <div class="popup-header">
+      <i class="fas fa-envelope"></i>
+      <div class="close-mini-container">
+        <i id="minimize" class="fas fa-minus"></i>
+        <i id="close" class="fas fa-times"></i>
+      </div>
+
+    </div>
+    <div class="popup-body-wrapper">
+
+      <div class="to-container">
+        <input class="to-input" type="text" name="to" placeholder="To (Recipient)">
+      </div>
+
+      <div class="subject-container">
+        <input class="subject-input" type="text" name="subject" placeholder="Subject">
+      </div>
+      <div class="new-message-body-container">
+
+        <textarea placeholder="Say something..." class="new-message-body-input"></textarea>
+      </div>
+
+      <div class="send-misc-container">
+        <div class="send-button-icon-container">
+          <div class="popup-button">Send</div>
+          <i class="fas fa-paperclip"></i>
+          <i class="fas fa-paragraph"></i>
+        </div>
+
+        <div class="delete-container">
+          <i id="send-misc-trash" class="fas fa-trash-alt"></i>
+          <div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="queenie-newmsg" class="new-message-popup-container">
+    <div class="popup-header">
+      <i class="fas fa-envelope"></i>
+      <div class="close-mini-container">
+        <i id="minimize" class="fas fa-minus"></i>
+        <i id="close" class="fas fa-times"></i>
+      </div>
+
+    </div>
+    <div class="popup-body-wrapper">
+
+      <div class="to-container">
+        <input class="to-input" type="text" name="to" placeholder="To (Recipient)">
+      </div>
+
+      <div class="subject-container">
+        <input class="subject-input" type="text" name="subject" placeholder="Subject">
+      </div>
+      <div class="new-message-body-container">
+
+        <textarea placeholder="Say something..." class="new-message-body-input"></textarea>
+      </div>
+
+      <div class="send-misc-container">
+        <div class="send-button-icon-container">
+          <div class="popup-button">Send</div>
+          <i class="fas fa-paperclip"></i>
+          <i class="fas fa-paragraph"></i>
+        </div>
+
+        <div class="delete-container">
+          <i id="send-misc-trash" class="fas fa-trash-alt"></i>
+          <div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="jason-newmsg" class="new-message-popup-container">
+    <div class="popup-header">
+      <i class="fas fa-envelope"></i>
+      <div class="close-mini-container">
+        <i id="minimize" class="fas fa-minus"></i>
+        <i id="close" class="fas fa-times"></i>
+      </div>
+
+    </div>
+    <div class="popup-body-wrapper">
+
+      <div class="to-container">
+        <input class="to-input" type="text" name="to" placeholder="To (Recipient)">
+      </div>
+
+      <div class="subject-container">
+        <input class="subject-input" type="text" name="subject" placeholder="Subject">
+      </div>
+      <div class="new-message-body-container">
+
+        <textarea placeholder="Say something..." class="new-message-body-input"></textarea>
+      </div>
+
+      <div class="send-misc-container">
+        <div class="send-button-icon-container">
+          <div class="popup-button">Send</div>
+          <i class="fas fa-paperclip"></i>
+          <i class="fas fa-paragraph"></i>
+        </div>
+
+        <div class="delete-container">
+          <i id="send-misc-trash" class="fas fa-trash-alt"></i>
+          <div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+  <script type="text/javascript" src="./index.js"/>
+</body>
+
+</html>
