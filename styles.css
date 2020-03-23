@@ -475,7 +475,7 @@ h3 {
 
     .body-content-container {
       height: 100%;
-      padding-top: 100px;
+      padding-top: 50px;
       padding-bottom: 100px;
       width: 100%;
       background-color: rgb(236, 236, 236);
@@ -506,7 +506,7 @@ h3 {
     }
 
     .message-container {
-      width: 85%;
+      width: 80%;
       margin: 0 auto;
       padding: 0px 40px;
       max-height: 100%;
@@ -562,7 +562,7 @@ h3 {
     .name-circle-container {
       align-items: center;
       width: 100%;
-      padding: 5px;
+      padding: 10px;
       margin-left: 10px;
     }
 
@@ -622,7 +622,6 @@ h3 {
 
     .expanded-message-wrapper {
        box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-      height: 400px;
     }
 
     .expanded-message {
@@ -702,6 +701,10 @@ h3 {
       color: #404040;
     }
 
+    #attachment-paperclip {
+      font-size: .8em;
+    }
+
     .attachment-container {
       display: flex;
       align-items: center;
@@ -709,7 +712,7 @@ h3 {
       padding: 5px;
       width: 150px;
       height: 25px;
-      box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.14), 0 2px 4px rgba(0, 0, 0, 0.28);
     }
 
     .attachment-icon-container {
@@ -738,6 +741,7 @@ h3 {
         .fas.fa-paperclip {
           margin: 0px 5px;
           transform: rotate(140deg);
+          font-size: 1.2em;
         }
 
         #jason {
@@ -1082,7 +1086,7 @@ h3 {
   width: 250px;
   left: 0px;
   top: 0px;
-  position: absolute;
+  position: fixed;
   padding-top: 100px;
   height: 100%;
   background-color: #fff;
@@ -1126,6 +1130,10 @@ h3 {
 .fas.fa-sort-down {
   margin-top: -10px;
   color: #333;
+}
+
+.fas.fa-sort-up {
+  margin-top:5px;
 }
 
 .teal2 {
@@ -1261,6 +1269,11 @@ h3 {
     display: none;
   }
 
+  .main-widget {
+    height: 45px;
+    width: 45px;
+  }
+
 }
 
 @media only screen and (max-width: 715px) {
@@ -1292,7 +1305,7 @@ h3 {
   }
 
   .sender-name {
-    font-size: 10px;
+    font-size: .8em;
   }
 
   .circle-avatar {
@@ -1407,9 +1420,9 @@ h3 {
   margin: 5px auto;
   }
 
-  #main-widget {
-    height: 50px;
-    width: 50px;
+  .main-widget {
+    height: 45px;
+    width: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
