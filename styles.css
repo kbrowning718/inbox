@@ -924,7 +924,7 @@ h3 {
   width: 300px;
   border-radius: 10px 10px 0px 0px;
   z-index: 1;
-  padding-bottom: 20px;
+  margin-bottom: 5px;
   bottom: 0px;
   position: fixed;
   display: none;
@@ -979,7 +979,7 @@ h3 {
   align-items: center;
   justify-content: space-between;
   height: 40px;
-  font-size: 20px;
+  font-size: 1.2em;
   padding: 10px 15px;
   background-color: #505050;
   color: #fff;
